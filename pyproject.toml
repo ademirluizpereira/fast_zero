@@ -40,7 +40,7 @@ line-ending = "lf"
 quote-style = 'single'
 
 [tool.taskipy.tasks]
-run = 'fastapi dev src/fast_zero/app.py'
+run = 'fastapi dev src/fast_zero/app.py --host 0.0.0.0'
 pre_test = 'task lint'
 test = 'pytest -s -x --cov=src/fast_zero/ --verbose'
 post_html = 'coverage html'
